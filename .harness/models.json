@@ -1,0 +1,36 @@
+{
+  "models": {
+    "thinker": {
+      "model": "opus-4",
+      "used_for": [
+        "task-decomposition",
+        "adversarial-review",
+        "failure-diagnosis",
+        "halt-report",
+        "complex-coding"
+      ],
+      "description": "Strongest reasoning model. Used when the agent needs to think deeply."
+    },
+    "worker": {
+      "model": "sonnet-4",
+      "used_for": [
+        "contract-generation",
+        "simple-coding",
+        "memory-writes",
+        "map-updates"
+      ],
+      "description": "Fast, capable model. Used for structured output and straightforward tasks."
+    },
+    "scanner": {
+      "model": "haiku-4",
+      "used_for": [
+        "file-search",
+        "syntax-checks",
+        "simple-lookups"
+      ],
+      "description": "Lightest model. Used for quick reads and trivial operations. Optional."
+    }
+  },
+  "updated_at": "2025-11-15",
+  "notes": "Edit model values when new models release. Roles (thinker/worker/scanner) stay the same."
+}
